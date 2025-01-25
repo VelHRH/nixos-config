@@ -1,19 +1,25 @@
 {
-  description = "Flake for NixOS and Home Manager configurations";
+  description = "My system configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "vel";
-    hostname = "nixos";
+    hosts = [
+      { hostname = "nixos"; stateVersion = "24.11"; }
+    ];
 
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
       system = system;
@@ -22,17 +28,17 @@
       };
 
       modules = [
-        ./configuration.nix
+        ./hosts/${hostname}/configuration.nix
       ];
     };
 
   in {
-    nixosConfigurations = {
-      "${hostname}" = makeSystem {
-        hostname = hostname;
-        stateVersion = "24.11";
-      };
-    };
+    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
+      configs // {
+        "${host.hostname}" = makeSystem {
+          inherit (host) hostname stateVersion;
+        };
+      }) {} hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
@@ -41,7 +47,7 @@
       };
 
       modules = [
-        ./modules/home-manager/home.nix
+        ./home-manager/home.nix
       ];
     };
   };

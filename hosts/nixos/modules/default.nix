@@ -1,0 +1,20 @@
+{
+  imports = [
+    ./audio.nix
+    ./bluetooth.nix
+    ./boot.nix
+    ./docker.nix
+    ./env.nix
+    ./home-manager.nix
+    ./hyprland.nix
+    ./kernel.nix
+    ./mime.nix
+    ./network.nix
+    ./nh.nix
+    ./nix.nix
+    ./timezone.nix
+    ./udisks2.nix
+    ./user.nix
+    ./zram.nix
+  ];
+}
