@@ -14,17 +14,28 @@ in
         no_fade_in = false;
       };
 
-      label = {
-        text = "$TIME";
-        font_size = 96;
-        font_family = "JetBrains Mono";
-        color = hexToRgb colors.primary-pale;
-        position = "0, 600";
-        halign = "center";
-        walign = "center";
-
-        shadow_passes = 1;
-      };
+      label = [
+        {
+          text = "$TIME";
+          font_size = 96;
+          font_family = "JetBrains Mono";
+          color = hexToRgb colors.primary-pale;
+          position = "0, 600";
+          halign = "center";
+          walign = "center";
+          shadow_passes = 1;
+        }
+        {
+          text = "$LAYOUT"; 
+          font_size = 16;
+          font_family = "JetBrains Mono";
+          color = hexToRgb colors.primary-pale;
+          position = "0, 50";
+          halign = "center";
+          walign = "center";
+          shadow_passes = 1;
+        }
+      ];
 
       background = [
         {

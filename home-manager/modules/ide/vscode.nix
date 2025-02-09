@@ -21,6 +21,10 @@ in
 
       "workbench.editor.enablePreview" = false;
 
+      "editor.tabSize" = 2;
+      "editor.insertSpaces" = true;
+      "editor.detectIndentation" = false;
+
       "editor.formatOnSave" = true;
       "editor.codeActionsOnSave" = {
         "source.fixAll.eslint" = "always";

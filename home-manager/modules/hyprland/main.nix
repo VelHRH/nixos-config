@@ -19,8 +19,8 @@ in
       monitor = ",1920x1080@60,auto,1";
       "$mainMod" = "SUPER";
       "$terminal" = "kitty";
-      "$fileManager" = "nemo";
-      "$menu" = "wofi";
+      "$fileManager" = "rofi -show filebrowser";
+      "$menu" = "rofi -show drun";
 
       exec-once = [
         "waybar"
@@ -45,8 +45,8 @@ in
       decoration = {
         rounding = 10;
 
-        active_opacity = 0.85;
-        inactive_opacity = 0.85;
+        active_opacity = 1;
+        inactive_opacity = 0.75;
 
         shadow = {
           enabled = true;

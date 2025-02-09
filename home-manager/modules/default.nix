@@ -4,14 +4,14 @@
     ./fonts.nix
     ./git.nix
     ./hyprland
+    ./ide
     ./kitty.nix
+    ./rofi.nix
     ./starship.nix
     ./stylix
     ./swaync.nix
     ./udiskie.nix
-    ./vscode.nix
     ./waybar
-    ./wofi
     ./zathura.nix
     ./zsh.nix
   ];

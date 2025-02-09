@@ -6,7 +6,6 @@
     beekeeper-studio
     discord
     google-chrome
-    nemo
     slack
     telegram-desktop
     vlc
@@ -27,7 +26,12 @@
     zip
 
     # Coding
+    bun
+    jetbrains.idea-ultimate
+    mongodb-compass
     nodejs
+    sbt
+    scala
     typescript
 
     # Other

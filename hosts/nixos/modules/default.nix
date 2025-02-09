@@ -11,6 +11,7 @@
     ./mime.nix
     ./network.nix
     ./nh.nix
+    ./nix-ld.nix
     ./nix.nix
     ./timezone.nix
     ./udisks2.nix
