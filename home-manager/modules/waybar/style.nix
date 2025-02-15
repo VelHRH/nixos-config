@@ -41,7 +41,7 @@ in
     color: #${colors.mantle};
   }
 
-  #clock, #battery, #pulseaudio, #tray {
+  #clock, #battery, #pulseaudio, #tray, #custom-power {
     background: #${colors.mantle};
     border-radius: 10px;
     padding: 0px 10px;
@@ -53,7 +53,11 @@ in
     margin-right: 7px;
   }
 
-  #clock:hover, #battery:hover, #pulseaudio:hover, #tray:hover {
+  #clock:hover,
+  #battery:hover,
+  #pulseaudio:hover,
+  #tray:hover,
+  #custom-power:hover {
     background: #${colors.primary};
     color: #${colors.mantle};
   }

@@ -12,9 +12,8 @@
         margin-right = 0;
         modules-left = ["hyprland/workspaces"];
         modules-center = [];
-        modules-right = [ "pulseaudio" "battery" "clock" "tray"];
+        modules-right = [ "pulseaudio" "battery" "clock" "custom/power" "tray"];
 
-        # Workspace settings
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -26,7 +25,6 @@
           };
         };
 
-        # Clock module
         clock= {
           format = " {:%a, %d %b, %I:%M %p}";
           tooltip= "true";
@@ -34,25 +32,22 @@
           format-alt= "{:%I:%M %p}";
         };
 
-        # Audio module
         "pulseaudio" = {
-        format = "{icon} {volume}%";
-        format-bluetooth = "{icon} {volume}% 󰂯"; 
-        format-muted = "󰝟"; 
-        format-icons = {
-          "headphones" = "󰋋"; 
-          "handsfree" = "󰋎"; 
-          "headset" = "󰋎";
-          "phone" = "󰣏"; 
-          "portable" = "󰣏"; 
-          "car" = "󰄜"; 
-          "default" = ["󰕿" "󰖀"];
+          format = "{icon} {volume}%";
+          format-bluetooth = "{icon} {volume}% 󰂯"; 
+          format-muted = "󰝟"; 
+          format-icons = {
+            "headphones" = "󰋋"; 
+            "handsfree" = "󰋎"; 
+            "headset" = "󰋎";
+            "phone" = "󰣏"; 
+            "portable" = "󰣏"; 
+            "car" = "󰄜"; 
+            "default" = ["󰕿" "󰖀"];
+          };
+          on-click = "pavucontrol";
         };
-        on-click = "pavucontrol";
-      };
 
-
-        # Battery module
         "battery" = {
           states = {
             warning = 30;
@@ -64,7 +59,14 @@
           format-icons = ["" "" "" "" ""];
         };
 
-        # Tray module
+        "custom/power" = {
+          format = "⏻";
+          tooltip = true;
+          tooltip-format = "Power Menu";
+          on-click = "rofi -show power-menu -modi power-menu:rofi-power-menu";
+          on-click-right = "systemctl poweroff";
+        };
+
         "tray" = {
           icon-size = 14;
           spacing = 1;
