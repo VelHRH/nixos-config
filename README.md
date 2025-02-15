@@ -22,3 +22,5 @@ sudo nixos-rebuild switch --flake .
 home-manager switch --flake .
 ```
 ![image](https://github.com/user-attachments/assets/a86266d1-e75f-4018-94e1-0af5b2107ea3)
+![image](https://github.com/user-attachments/assets/55624f57-cbc0-4530-b799-87eff24ca3da)
+
