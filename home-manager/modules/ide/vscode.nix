@@ -45,6 +45,12 @@ in
         "command" = "editor.action.commentLine";
         "when" = "editorTextFocus && !editorReadonly";
       }
+
+      {
+        "key" = "ctrl+alt+a";
+        "command" = "editor.action.changeAll";
+        "when" = "editorTextFocus";
+      }
     ];
   };
 }

@@ -9,6 +9,7 @@
     slack
     telegram-desktop
     vlc
+    zoom-us
 
     # CLI utils
     bottom # Resource monitor
@@ -19,6 +20,7 @@
     pywal # Color schemes generation
     showmethekey
     unzip
+    usbutils
     wget
     wl-clipboard
     yarn
@@ -27,6 +29,8 @@
 
     # Coding
     bun
+    deno
+    go
     jetbrains.idea-ultimate
     mongodb-compass
     nodejs
@@ -39,6 +43,7 @@
     libnotify
     libsForQt5.xwaylandvideobridge
     nix-prefetch-scripts
+    unzip
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
   ];
