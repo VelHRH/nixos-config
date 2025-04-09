@@ -14,8 +14,6 @@
         "$git_status"
         "$nix_shell"
         "$fill"
-        "$python"
-        "$golang"
         "$status"
         "$line_break"
         "$character"
@@ -23,7 +21,6 @@
 
       fill.symbol = " ";
       hostname.ssh_symbol = "";
-      python.format = "([ $virtualenv]($style)) ";
       rust.symbol = " ";
       status.disabled = false;
       username.format = "[$user]($style)@";
