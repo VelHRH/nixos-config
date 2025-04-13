@@ -13,10 +13,10 @@
 
     # CLI utils
     bottom # Resource monitor
+    brightnessctl # Brightness control
     ffmpeg
     grimblast # Screenshot tool
     imagemagick
-    light # Brightness control
     microfetch
     pywal # Color schemes generation
     showmethekey

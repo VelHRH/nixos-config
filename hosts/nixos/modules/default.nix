@@ -14,6 +14,7 @@
     ./nh.nix
     ./nix-ld.nix
     ./nix.nix
+    ./postgres.nix
     ./timezone.nix
     ./udisks2.nix
     ./user.nix
