@@ -16,6 +16,7 @@
     ./nix.nix
     ./postgres.nix
     ./timezone.nix
+    ./udev-rules.nix
     ./udisks2.nix
     ./user.nix
     ./zram.nix
