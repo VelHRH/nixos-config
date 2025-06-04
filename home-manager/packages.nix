@@ -1,11 +1,15 @@
 { pkgs, ... }: {
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [ "beekeeper-studio-5.2.9" ];
+  };
 
   home.packages = with pkgs; [
     # Desktop apps
     beekeeper-studio
     discord
     google-chrome
+    libreoffice-qt
     slack
     telegram-desktop
     vlc
@@ -32,7 +36,6 @@
     bun
     deno
     go
-    jetbrains.idea-ultimate
     mongodb-compass
     nodejs
     sbt
@@ -44,6 +47,7 @@
     libnotify
     libsForQt5.xwaylandvideobridge
     nix-prefetch-scripts
+    unrar
     unzip
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland

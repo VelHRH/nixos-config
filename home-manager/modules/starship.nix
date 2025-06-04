@@ -4,7 +4,7 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
-    settings = lib.mkDefault {
+    settings = {
       format = lib.concatStrings [
         "$username"
         "$hostname"

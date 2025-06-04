@@ -1,4 +1,6 @@
-{ config, ... }: {
+{ config, ... }:
+
+{
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -36,6 +38,9 @@
       if uwsm check may-start > /dev/null && uwsm select; then
         exec systemd-cat -t uwsm_start uwsm start default
       fi
+
+      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     '';
   };
 }
+
