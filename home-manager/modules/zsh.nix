@@ -39,7 +39,7 @@
         exec systemd-cat -t uwsm_start uwsm start default
       fi
 
-      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
     '';
   };
 }

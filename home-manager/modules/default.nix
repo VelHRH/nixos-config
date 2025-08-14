@@ -5,6 +5,7 @@
     ./git.nix
     ./hyprland
     ./ide
+    ./insecure-packages.nix
     ./kitty.nix
     ./rofi.nix
     ./starship.nix

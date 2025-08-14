@@ -6,7 +6,6 @@
 
   home.packages = with pkgs; [
     # Desktop apps
-    beekeeper-studio
     discord
     google-chrome
     libreoffice-qt
@@ -14,21 +13,24 @@
     telegram-desktop
     vlc
     zoom-us
+    kitty
 
     # CLI utils
+    ascii
     bottom # Resource monitor
     brightnessctl # Brightness control
     ffmpeg
     grimblast # Screenshot tool
     imagemagick
     microfetch
+    ngrok
     pywal # Color schemes generation
     showmethekey
     unzip
     usbutils
     wget
     wl-clipboard
-    yarn
+    yarn 
     yt-dlp 
     zip
 

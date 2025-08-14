@@ -4,6 +4,7 @@
     ./audio.nix
     ./bluetooth.nix
     ./boot.nix
+    ./compilers.nix
     ./docker.nix
     ./env.nix
     ./home-manager.nix
