@@ -10,6 +10,10 @@ in
       enable_audio_bell no
       window_padding_width 5
       
+      # Remote control settings
+      allow_remote_control yes
+      listen_on unix:/tmp/kitty
+      
       # Highlight color
       selection_foreground #${colors.background}
       selection_background #${colors.text}

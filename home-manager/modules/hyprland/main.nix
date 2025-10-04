@@ -68,13 +68,13 @@ in
           brightness = 1;
         };
       };
-
+  
       animations = {
         enabled = false;
       };
 
       input = {
-        kb_layout = "us,ru";
+        kb_layout = "us,ua";
         kb_options = "grp:alt_shift_toggle";
         natural_scroll = true;
         touchpad = {

@@ -1,11 +1,12 @@
 { pkgs, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = [ "beekeeper-studio-5.2.9" ];
+    permittedInsecurePackages = [ "beekeeper-studio-5.2.12" ];
   };
 
   home.packages = with pkgs; [
     # Desktop apps
+    beekeeper-studio
     discord
     google-chrome
     libreoffice-qt
@@ -24,6 +25,7 @@
     imagemagick
     microfetch
     ngrok
+    bind # DNS lookup
     pywal # Color schemes generation
     showmethekey
     unzip

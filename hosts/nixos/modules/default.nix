@@ -7,6 +7,7 @@
     ./compilers.nix
     ./docker.nix
     ./env.nix
+    ./gpu.nix
     ./home-manager.nix
     ./hyprland.nix
     ./kernel.nix
